@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi above — Online Marketing Agency</title>
+    <meta name="description" content="hi above — Online Marketing Agency. Performance, Strategie und Content für messbares Wachstum. Neue Website entsteht gerade.">
+    
+    <!-- Favicon (Growth Orange Brand Mark) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 80'%3E%3Cpath d='M25 15 L95 15 L75 40 L5 40 Z' fill='%23FF5A1F'/%3E%3Cpath d='M35 48 L100 48 L80 73 L15 73 Z' fill='%23FF5A1F'/%3E%3C/svg%3E">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Sora (400, 600, 800) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Brand Design Tokens -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spruce: {
+                            DEFAULT: '#0E2B22',
+                            deep: '#091E18',
+                        },
+                        growth: '#FF5A1F',
+                        cream: '#FFF5E6',
+                        bloom: '#C7BAFF',
+                        strategy: '#B7C8A4',
+                    },
+                    fontFamily: {
+                        sans: ['Sora', 'sans-serif'],
+                    },
+                    letterSpacing: {
+                        tightest: '-0.03em',
+                        widestplus: '0.28em',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float-slow': 'float 8s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-6px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base Design System Setup */
+        html, body {
+            font-family: 'Sora', sans-serif;
+            background-color: #0E2B22;
+            color: #FFF5E6;
+            height: 100dvh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Fine Architectural Data Grid */
+        .brand-grid {
+            background-size: 48px 48px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 245, 230, 0.035) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 245, 230, 0.035) 1px, transparent 1px);
+            mask-image: radial-gradient(circle at center, black 35%, transparent 85%);
+            -webkit-mask-image: radial-gradient(circle at center, black 35%, transparent 85%);
+        }
+
+        /* Subtle Entrance Animation */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-reveal {
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .delay-1 { animation-delay: 0.1s; opacity: 0; }
+        .delay-2 { animation-delay: 0.25s; opacity: 0; }
+        .delay-3 { animation-delay: 0.4s; opacity: 0; }
+    </style>
+</head>
+<body class="relative flex flex-col justify-between items-center selection:bg-growth selection:text-white antialiased">
+
+    <!-- Ambient Background Layer (Strict Geometric & Data Progression Aesthetics) -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden">
+        <!-- Architectural Grid -->
+        <div id="parallax-grid" class="brand-grid absolute -inset-12 transition-transform duration-300 ease-out"></div>
+        
+        <!-- Ambient Light Orbs (Growth Orange & Content Bloom) -->
+        <div id="orb-orange" class="absolute top-1/4 right-1/4 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-growth/10 blur-[110px] transition-transform duration-500 ease-out"></div>
+        <div id="orb-bloom" class="absolute bottom-1/4 left-1/4 w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-bloom/10 blur-[100px] transition-transform duration-500 ease-out"></div>
+    </div>
+
+    <!-- Top Minimal Bar -->
+    <header class="relative z-10 w-full max-w-5xl px-6 pt-8 flex justify-between items-center text-xs text-cream/40 font-normal">
+        <span class="tracking-wider uppercase text-[11px] text-strategy/70">hiabove.at</span>
+        <span class="hidden sm:inline-block tracking-wider text-[11px]">Wien &middot; Digital Growth</span>
+    </header>
+
+    <!-- Main Centered Brand Stage -->
+    <main class="relative z-10 flex flex-col items-center text-center px-6 max-w-2xl mx-auto my-auto">
+        
+        <!-- Status Pill Badge -->
+        <div class="animate-reveal delay-1 mb-8 inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-spruce-deep/80 border border-cream/10 backdrop-blur-md shadow-lg">
+            <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-growth opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-growth"></span>
+            </span>
+            <span class="text-xs font-semibold tracking-wide text-cream/90">
+                Neue Website entsteht gerade
+            </span>
+        </div>
+
+        <!-- Primary Logo Lockup (Signature 2-Bar Ascending Mark + Wordmark) -->
+        <div class="animate-reveal delay-2 flex flex-col items-center mb-7">
+            <div class="relative inline-flex flex-col items-start">
+                
+                <!-- 2-Bar Ascending Symbol positioned top-right above wordmark -->
+                <div class="self-end -mb-1 sm:-mb-2 mr-0.5 animate-float-slow">
+                    <svg class="w-12 h-9 sm:w-16 sm:h-12 drop-shadow-[0_6px_18px_rgba(255,90,31,0.28)]" viewBox="0 0 100 80" fill="none" aria-hidden="true">
+                        <path d="M25 15 L95 15 L75 40 L5 40 Z" fill="#FF5A1F" />
+                        <path d="M35 48 L100 48 L80 73 L15 73 Z" fill="#FF5A1F" />
+                    </svg>
+                </div>
+
+                <!-- Wordmark -->
+                <h1 class="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tightest text-cream leading-none select-none">
+                    hi above
+                </h1>
+
+                <!-- Tagline -->
+                <p class="w-full text-center sm:text-left text-[10px] sm:text-xs font-semibold tracking-widestplus text-cream/65 uppercase mt-3 sm:pl-1">
+                    Online Marketing Agency
+                </p>
+            </div>
+        </div>
+
+        <!-- Minimal Supporting Copy & Direct Contact -->
+        <div class="animate-reveal delay-3 flex flex-col items-center gap-6">
+            <p class="text-sm sm:text-base text-cream/70 font-normal max-w-md leading-relaxed">
+                Strategie, Performance und Content für messbares Wachstum &ndash; bald live.
+            </p>
+
+            <!-- Direct Mail & Copy Action -->
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <a href="mailto:hello@hiabove.at" class="group inline-flex items-center gap-2.5 px-5 py-2.5 rounded-lg bg-growth hover:bg-[#e04911] text-white text-xs sm:text-sm font-semibold transition-all duration-200 shadow-lg shadow-growth/20">
+                    <span>hello@hiabove.at</span>
+                    <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H8M17 7V16"></path>
+                    </svg>
+                </a>
+
+                <button id="copy-email-btn" type="button" onclick="copyEmail()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-cream/5 hover:bg-cream/10 border border-cream/15 text-cream/85 text-xs sm:text-sm font-normal transition-all duration-200 cursor-pointer" title="E-Mail-Adresse kopieren">
+                    <svg id="copy-icon" class="w-4 h-4 text-bloom" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                    </svg>
+                    <span id="copy-label">Kopieren</span>
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer class="relative z-10 w-full max-w-5xl px-6 pb-8 flex flex-col sm:flex-row justify-between items-center gap-2 text-[11px] text-cream/35">
+        <span>&copy; 2026 hi above. Alle Rechte vorbehalten.</span>
+        <div class="flex items-center gap-2">
+            <span class="inline-block w-1.5 h-1.5 rounded-full bg-strategy/60"></span>
+            <span>Performance &middot; SEO &middot; Content &middot; Strategie</span>
+        </div>
+    </footer>
+
+    <!-- Subtle Interactive Logic -->
+    <script>
+        // Copy email helper with fallback for iFrame / GitHub Pages environments
+        function copyEmail() {
+            const email = 'hello@hiabove.at';
+            const label = document.getElementById('copy-label');
+            const btn = document.getElementById('copy-email-btn');
+
+            const textArea = document.createElement('textarea');
+            textArea.value = email;
+            textArea.style.position = 'fixed';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                label.textContent = 'Kopiert!';
+                btn.classList.add('border-strategy/50', 'text-strategy');
+                setTimeout(() => {
+                    label.textContent = 'Kopieren';
+                    btn.classList.remove('border-strategy/50', 'text-strategy');
+                }, 2200);
+            } catch (err) {
+                console.error('Copy failed', err);
+            } finally {
+                document.body.removeChild(textArea);
+            }
+        }
+
+        // Subtle mouse parallax for depth on desktop
+        const grid = document.getElementById('parallax-grid');
+        const orbOrange = document.getElementById('orb-orange');
+        const orbBloom = document.getElementById('orb-bloom');
+
+        window.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 2;
+            const y = (e.clientY / window.innerHeight - 0.5) * 2;
+
+            if (grid) grid.style.transform = `translate(${x * -10}px, ${y * -10}px)`;
+            if (orbOrange) orbOrange.style.transform = `translate(${x * 20}px, ${y * 20}px)`;
+            if (orbBloom) orbBloom.style.transform = `translate(${x * -18}px, ${y * -18}px)`;
+        });
+    </script>
+</body>
+</html>
